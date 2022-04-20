@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Exercise #8</title>
+    </head>
+    <body>
+        <input type="number" id = "inputScore">
+        <button onclick="CheckGrade()">submit</button>
+
+        <p id="Grade"></p>
+    </body>
+
+    <script>
+       function CheckGrade()
+       {
+        var score = document.getElementById('inputScore').value;
+           if(score >= 80)
+           {
+               document.getElementById('Grade').innerHTML = 'Your grade is A';
+           }
+           else if(score >= 71 && score < 80)
+           {
+               document.getElementById('Grade').innerHTML = 'Your grade is B';
+           }
+           else if(score >= 61 && score < 71)
+           {
+               document.getElementById('Grade').innerHTML = 'Your grade is C';
+           }
+           else if(score >= 51 && score < 61)
+           {
+               document.getElementById('Grade').innerHTML = 'Your grade is D';
+           }
+           else
+           {
+               document.getElementById('Grade').innerHTML = 'Your grade is F';
+           }
+       }
+    </script>
+</html>

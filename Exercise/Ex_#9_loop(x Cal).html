@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Exercise #9</title>
+    </head>
+    <body>
+        <input type="number" id = "inputNumber">
+        <button onclick="Calculate()">submit</button>
+
+        <p id="number"></p>
+    </body>
+
+    <script>
+        function Calculate()
+        {
+            var inputInt = document.getElementById('inputNumber').value;
+            var AllData = '';
+            for(i = 1;i < 13;i++)
+            {
+               AllData += inputInt + 'x' + i + '=' + inputInt*i + '<br>'
+            }
+            document.getElementById('number').innerHTML = AllData;
+        }
+    </script>
+</html>

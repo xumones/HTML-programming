@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Exercise #12</title>
+    </head>
+    <body>
+        <div id="myArray"></div>
+        <input type="text" id = "inputName">
+        <button onclick="submit()">Add</button>
+        <div id="output"></div>
+    </body>
+
+    <script>
+    const StudentName = ['Sebestiam','Jasmine','Rusty'];
+        function submit()
+        {
+            var inputNames = document.getElementById('inputName').value;
+            StudentName.push(inputNames);
+            document.getElementById('output').innerHTML = StudentName;
+        }
+    </script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Exercise #16</title>
+    </head>
+    <body>
+        x = <input type="number" id="inputNumberX"> <br>
+        y = <input type="number" id="inputNumberY">
+        <button onclick="add()">+</button>
+        <button onclick="minus()">-</button>
+        <div id="output"></div>
+    </body>
+
+    <script>
+    function add()
+    {
+        var x = document.getElementById('inputNumberX').value;
+        var y = document.getElementById('inputNumberY').value;
+        document.getElementById('output').innerHTML = parseInt(x) + parseInt(y)
+    }
+    function minus()
+    {
+        var x = document.getElementById('inputNumberX').value;
+        var y = document.getElementById('inputNumberY').value;
+        document.getElementById('output').innerHTML = parseInt(x) - parseInt(y)
+    }
+    </script>
+</html>

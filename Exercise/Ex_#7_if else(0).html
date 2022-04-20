@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Exercise #7</title>
+    </head>
+    <body>
+        <input type="number" id = "inputNumber">
+        <button onclick="Check()">submit</button>
+
+        <p id="output"></p>
+    </body>
+
+    <script>
+       function Check()
+       {
+        var X = document.getElementById('inputNumber').value;
+           if(X > 0)
+           {
+               document.getElementById('output').innerHTML = 'X is Positive';
+           }
+           else if(X < 0)
+           {
+               document.getElementById('output').innerHTML = 'X is Negative';
+           }
+           else if(X == 0)
+           {
+               document.getElementById('output').innerHTML = 'X is Zero';
+           }
+       }
+    </script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Exercise #10</title>
+    </head>
+    <body>
+        <input type="number" id = "inputNumber">
+        <button onclick="submit()">submit</button>
+
+        <p id="output"></p>
+    </body>
+
+    <script>
+        function submit()
+        {
+            var numb = document.getElementById('inputNumber').value;
+            var AllData = 0;
+            for (var i = 0; i <= numb; i++)
+            {
+                if(i%2 == 0)
+                {
+                    AllData = AllData + parseInt(i);
+                }
+            }
+            document.getElementById('output').innerHTML = AllData
+        }
+    </script>
+</html>

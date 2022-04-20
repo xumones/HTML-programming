@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Exercise #6</title>
+    </head>
+    <body>
+        <input type="number" id = "inputWidth">
+        <button onclick="Calculate()">submit</button>
+
+        <p id="Area"></p>
+    </body>
+
+    <script> 
+       function Calculate()
+       {
+           var Width = document.getElementById('inputWidth').value;
+
+           document.getElementById('Area').innerHTML = 'Area of Square is ' + Width ** 2;
+       }
+    </script>
+</html>

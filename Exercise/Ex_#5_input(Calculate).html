@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Exercise #5</title>
+    </head>
+    <body>
+        x = <input type="number" id = "inputNumberX">
+        y = <input type="number" id = "inputNumberY">
+        <button onclick="Calculate()">submit</button>
+
+        <p id="output +"></p> 
+        <p id="output -"></p>
+        <p id="output *"></p>
+        <p id="output /"></p>
+        <p id="output **"></p>
+        <p id="output %"></p>
+    </body>
+
+    <script> 
+       function Calculate()
+       {
+           var numX = document.getElementById('inputNumberX').value;
+           var numY = document.getElementById('inputNumberY').value;
+
+           document.getElementById('output +').innerHTML = parseInt(numX) + parseInt(numY)
+           document.getElementById('output -').innerHTML = numX - numY
+           document.getElementById('output *').innerHTML = numX * numY
+           document.getElementById('output /').innerHTML = numX / numY
+           document.getElementById('output **').innerHTML = numX ** numY
+           document.getElementById('output %').innerHTML = numX % numY
+       }
+    </script>
+</html>
