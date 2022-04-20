@@ -1,2 +1,2 @@
-# JS-programming and HTML-programming
-repository for education about HTML language
+# JS-HTML-CSS programming
+repository for education about JS-HTML-CSS language
